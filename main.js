@@ -10,25 +10,25 @@ fetch(`${BASE_URL}/api/Services`)
         return response.json();
     })
     .then(data => {
+        services = data;
         renderServices(data);
     })
 
 const renderServices = (services) => {
     console.log(services);
-    const servicesId = document.getElementById('servicesId');
+    const servicesId = document.getElementById('services-row');
 
     let resultHtml = '';
 
     services.forEach(service => {
         resultHtml += `
-        <div id="serId" class="carousel-inner">
-            <div class="service-body active">
-                <img src="${service.photoUrl}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                     <h1>${service.name}</h1>
-                     <h2>Price: ${service.price} $</h2>
-                     <button type="button" onclick="fillEditData(${service.id})" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Edit</button>
-                </div>
+        <div class="card mx-3 my-3" style="width: 20rem;">
+            <img src="${service.photoUrl}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${service.name}</h5>
+                <p class="card-text">${service.price}$</p>
+                <button type="button" onclick="fillEditData(${service.id})" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Edit</button>
+                <button type="button" class="btn btn-danger" onclick="deleteService(${service.id})">Delete</button>
             </div>
         </div>`;
     });
@@ -63,18 +63,39 @@ const editServices = () => {
             name: serviceFormName,
             price: serviceFormPrice,
             photoUrl: serviceFormPhoto
-            })
+        })
+    })
         .then(response => {
-            if(!response.ok){
-                throw Error('Error');
-            }
-            return response.json();
+           console.log(response);
         })
-        .then(data => {
-            console.log(data);
+}
+
+const addService = () => {
+    const serviceAddId = document.getElementById('service-Id').value;
+    const serviceAddName = document.getElementById('service-Name').value;
+    const serviceAddPrice = document.getElementById('service-Price').value;
+    const serviceAddPhoto = document.getElementById('service-Photo').value;
+    
+    fetch(`${BASE_URL}/api/Services`, {
+        method: 'POST',
+        headers: new Headers({'content-type': 'application/json'}),
+        body: JSON.stringify({
+            id: serviceAddId,
+            name: serviceAddName,
+            price: serviceAddPrice,
+            photoUrl: serviceAddPhoto
         })
-        .catch(err => {
-            console.log(err);
-        })
+    })
+    .then(response => {
+        console.log(response);
+    })
+}
+
+const deleteService = (id) => {
+    fetch(`${BASE_URL}/api/Services/${id}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        console.log(response);
     })
 }
