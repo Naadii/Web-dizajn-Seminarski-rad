@@ -1,17 +1,97 @@
-h1{
-    color: black;
-    border-style: inset;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+body{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: bolder;
+    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/self-care-for-entrepreneurs-8.jpg?v=1650395942");
 }
 
-h2{
-    border-style: groove;
-    background-color: black;
+.navbar-brand{
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn{
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+
+.card-img-top{
+    width: 263px;
+    height: 250px;
+}
+
+.card{
+    width: 500px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: #9fbd9b;
+}
+
+.card-header{
+    background-color: #2b2e2b;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card-title{
+    font-family: "OCR A Std", "monospace";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#edit1{
+    width: 80px;
+    margin-right: 10px;
+    margin-left: 35px;
+}
+
+#delete1{
+    width: 80px;
+}
+
+.container2{
+    background-color: #84a184;
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h1-class{
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+.p-class{
+    text-align: center;
+}
+.ul-class{
+    margin-left: 30%;
+    padding-bottom: 20px;
+}
+
+/* .img-fluid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+} */
+
+.modal-content{
+    background-color: #84a184;
 }
 
 @media only screen and (max-width: 425px){
-    
+
 }

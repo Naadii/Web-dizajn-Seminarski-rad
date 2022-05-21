@@ -10,12 +10,52 @@
     <title>Seminarski rad</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand">Self-Care</a>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Add Services</button>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Self-Care</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Haircut</a></li>
+              <li><a class="dropdown-item" href="#">Nails</a></li>
+              <li><a class="dropdown-item" href="#">Makeup</a></li>
+              <li><a class="dropdown-item" href="#">Solarium</a></li>
+              <li><a class="dropdown-item" href="#">Hair coloring</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Add Services</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container2">
+    <h1 class="h1-class">Why Is Self-Care Important?</h1>
+    <p class="p-class">Having an effective self-care routine has been shown to have a number of important health benefits. Some of these include:</p>
+      <ul class="ul-class">
+        <li>Reducing anxiety and depression</li>
+        <li>Reducing stress and improving resilience</li>
+        <li>Improving happiness</li>
+        <li>Increasing energy</li>
+        <li>Reducing burnout</li>
+        <li>Stronger interpersonal relationships</li>
+      </ul>
+  </div>
+  
+  <div class="container2">
+    <h1 class="h1-class">Chose your service</h1>
+  </div>
+
     <div class="container">
       <div class="row" id="services-row">
           
@@ -90,6 +130,9 @@
             </div>
           </div>
         </div>
+    </div>
+    <div class="container2">
+      <h1 class="h1-class">Thank you for choosing us</h1>
     </div>
 </body>
 <script src="./main.js"></script>
