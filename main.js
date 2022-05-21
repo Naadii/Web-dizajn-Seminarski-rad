@@ -22,13 +22,13 @@ const renderServices = (services) => {
 
     services.forEach(service => {
         resultHtml += `
-        <div class="card mx-3 my-3" style="width: 20rem;">
-            <img src="${service.photoUrl}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${service.name}</h5>
-                <p class="card-text">${service.price}$</p>
-                <button type="button" onclick="fillEditData(${service.id})" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Edit</button>
-                <button type="button" class="btn btn-danger" onclick="deleteService(${service.id})">Delete</button>
+        <div class="card  mx-4 my-3" style="width: 20rem;">
+            <h5 class="card-header">${service.name}</h5>
+            <div class="card-body" id="cardId">
+                <h5 class="card-title">Price: ${service.price}$</h5>
+                <img src="${service.photoUrl}" class="card-img-top" alt="...">
+                <button type="button" onclick="fillEditData(${service.id})" class="btn btn-dark" id="edit1" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Edit</button>
+                <button type="button" class="btn btn-light" id="delete1" onclick="deleteService(${service.id})">Delete</button>
             </div>
         </div>`;
     });
