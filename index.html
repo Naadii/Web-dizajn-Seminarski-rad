@@ -1,145 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Seminarski rad</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Self-Care</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reservation</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Haircut</a></li>
-              <li><a class="dropdown-item" href="#">Nails</a></li>
-              <li><a class="dropdown-item" href="#">Makeup</a></li>
-              <li><a class="dropdown-item" href="#">Solarium</a></li>
-              <li><a class="dropdown-item" href="#">Hair coloring</a></li>
+  </head>
+  <body>
+    <div class='main-container'>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Self-Care</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Haircut</a></li>
+                  <li><a class="dropdown-item" href="#">Nails</a></li>
+                  <li><a class="dropdown-item" href="#">Makeup</a></li>
+                  <li><a class="dropdown-item" href="#">Solarium</a></li>
+                  <li><a class="dropdown-item" href="#">Hair coloring</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
+            <button
+              type="button"
+              class="btn btn-light"
+              id="add1"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@getbootstrap"
+            >
+              Add Services
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container2">
+        <h1 class="h1-class">Why Is Self-Care Important?</h1>
+        <p class="p-class">
+          Having an effective self-care routine has been shown to have a number
+          of important health benefits. Some of these include:
+        </p>
+        <ul class="ul-class">
+          <li>Reducing anxiety and depression</li>
+          <li>Reducing stress and improving resilience</li>
+          <li>Improving happiness</li>
+          <li>Increasing energy</li>
+          <li>Reducing burnout</li>
+          <li>Stronger interpersonal relationships</li>
         </ul>
-        <button type="button" class="btn btn-light" id="add1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Add Services</button>
       </div>
-    </div>
-  </nav>
 
-  <div class="container2">
-    <h1 class="h1-class">Why Is Self-Care Important?</h1>
-    <p class="p-class">Having an effective self-care routine has been shown to have a number of important health benefits. Some of these include:</p>
-      <ul class="ul-class">
-        <li>Reducing anxiety and depression</li>
-        <li>Reducing stress and improving resilience</li>
-        <li>Improving happiness</li>
-        <li>Increasing energy</li>
-        <li>Reducing burnout</li>
-        <li>Stronger interpersonal relationships</li>
-      </ul>
-  </div>
-  
-  <div class="container2">
-    <h1 class="h1-class">Chose your service</h1>
-  </div>
-
-    <div class="container">
-      <div class="row" id="services-row">
-          
+      <div class="container2">
+        <h1 class="h1-class">Chose your service</h1>
       </div>
-    </div> 
 
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="container">
+        <div class="row" id="services-row"></div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Edit service</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                    <label for="service-id" class="col-form-label">Id:</label>
-                    <input type="number" class="form-control" id="service-id">
-                  </div>
-                <div class="mb-3">
-                  <label for="service-name" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="service-name">
+                  <label for="service-id" class="col-form-label">Id:</label>
+                  <input type="number" class="form-control" id="service-id" />
                 </div>
                 <div class="mb-3">
-                    <label for="service-price" class="col-form-label">Price:</label>
-                    <input type="number" class="form-control" id="service-price">
-                  </div>
+                  <label for="service-name" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="service-name" />
+                </div>
                 <div class="mb-3">
-                  <label for="service-photo" class="col-form-label">Photo:</label>
-                  <input type="text" class="form-control" id="service-photo">
+                  <label for="service-price" class="col-form-label"
+                    >Price:</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="service-price"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="service-photo" class="col-form-label"
+                    >Photo:</label
+                  >
+                  <input type="text" class="form-control" id="service-photo" />
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-light" style="background-color: #f59fd5;" onclick="editServices()">Done</button>
-              </div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-light"
+                style="background-color: #f59fd5"
+                onclick="editServices()"
+              >
+                Done
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">New service</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="service-Id" class="col-form-label">Service id:</label>
-                  <input type="number" class="form-control" id="service-Id">
+                  <label for="service-Id" class="col-form-label"
+                    >Service id:</label
+                  >
+                  <input type="number" class="form-control" id="service-Id" />
                 </div>
                 <div class="mb-3">
-                  <label for="service-Name" class="col-form-label">Service name:</label>
-                  <input type="text" class="form-control" id="service-Name">
+                  <label for="service-Name" class="col-form-label"
+                    >Service name:</label
+                  >
+                  <input type="text" class="form-control" id="service-Name" />
                 </div>
                 <div class="mb-3">
-                  <label for="service-Price" class="col-form-label">Service price:</label>
-                  <input type="number" class="form-control" id="service-Price">
+                  <label for="service-Price" class="col-form-label"
+                    >Service price:</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="service-Price"
+                  />
                 </div>
                 <div class="mb-3">
-                  <label for="service-Photo" class="col-form-label">Service photo:</label>
-                  <input type="text" class="form-control" id="service-Photo">
+                  <label for="service-Photo" class="col-form-label"
+                    >Service photo:</label
+                  >
+                  <input type="text" class="form-control" id="service-Photo" />
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-light" style="background-color: #f59fd5;" onclick="addService()">Done</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-light"
+                style="background-color: #f59fd5"
+                onclick="addService()"
+              >
+                Done
+              </button>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container2">
+        <h1 class="h1-class">Thank you for choosing us</h1>
+      </div>
     </div>
-    <div class="container2">
-      <h1 class="h1-class">Thank you for choosing us</h1>
-    </div>
-</body>
-<script src="./main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  </body>
+  <script src="./main.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 </html>

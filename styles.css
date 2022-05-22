@@ -1,103 +1,119 @@
-body{
-    height: 100vh;
-    background-repeat: no-repeat;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-weight: bolder;
+  width: 100%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0070/7032/files/self-care-for-entrepreneurs-8.jpg?v=1650395942');
+}
+
+.navbar-brand {
+  font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.card {
+  width: 40%;
+  height: 420px;
+  border-radius: 10px;
+  background-color: #9fbd9b;
+}
+
+.card-header {
+  background-color: #2b2e2b;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card-title {
+  font-family: 'OCR A Std', 'monospace';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#edit1 {
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 35px;
+}
+
+#delete1 {
+  width: 80px;
+}
+
+.container2 {
+  background-color: #84a184;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#services-row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  width: 100%;
+}
+.h1-class {
+  font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+.p-class {
+  text-align: center;
+}
+.ul-class {
+  margin-left: 35%;
+  padding-bottom: 20px;
+}
+
+.modal-content {
+  background-color: #84a184;
+}
+
+@media only screen and (max-width: 800px) {
+  .collapse {
     background-attachment: fixed;
-    background-size: cover;
-    font-weight: bolder;
-    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/self-care-for-entrepreneurs-8.jpg?v=1650395942");
-}
-
-.navbar-brand{
-    font-family: "Brush Script MT", "Brush Script Std", "cursive";
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.btn{
-    margin-top: 10px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 10px;
-}
-
-.card-img-top{
-    height: 250px;
-}
-
-.card{
-    width: 500px;
-    height: 420px;
-    border-radius: 10px;
-    background-color: #9fbd9b;
-}
-
-.card-header{
-    background-color: #2b2e2b;
-    height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    color: white;
-    font-family: "Brush Script MT", "Brush Script Std", "cursive";
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.card-title{
-    font-family: "OCR A Std", "monospace";
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#edit1{
-    width: 80px;
-    margin-right: 10px;
-    margin-left: 35px;
-}
-
-#delete1{
-    width: 80px;
-}
-
-.container2{
-    background-color: #84a184;
-    width: 800px;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.h1-class{
-    font-family: "Brush Script MT", "Brush Script Std", "cursive";
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-}
-.p-class{
-    text-align: center;
-}
-.ul-class{
-    margin-left: 30%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  body,
+  #add1 {
+    font-size: 15px;
+  }
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .ul-class {
+    margin:auto;
     padding-bottom: 20px;
-}
-
-.modal-content{
-    background-color: #84a184;
-}
-
- @media only screen and (max-width: 800px) {
-    .collapse{
-        background-attachment:fixed;
-        margin: auto;
-    }
-    .navbar{
-    width: 800px;
-    }
-    body,
-    #add1{
-        font-size: 35px;
-    }
-    .navbar-brand{
-        font-size: 40px;
-    }
-    
+  }
 }

@@ -66,7 +66,7 @@ const editServices = () => {
         })
     })
         .then(response => {
-           console.log(response);
+            console.log("Edit done", response);
         })
 }
 
@@ -87,7 +87,7 @@ const addService = () => {
         })
     })
     .then(response => {
-        console.log(response);
+        console.log("Service added", response);
     })
 }
 
