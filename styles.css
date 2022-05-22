@@ -21,7 +21,6 @@ body{
 }
 
 .card-img-top{
-    width: 263px;
     height: 250px;
 }
 
@@ -81,17 +80,24 @@ body{
     padding-bottom: 20px;
 }
 
-/* .img-fluid{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-} */
-
 .modal-content{
     background-color: #84a184;
 }
 
-@media only screen and (max-width: 425px){
-
+ @media only screen and (max-width: 800px) {
+    .collapse{
+        background-attachment:fixed;
+        margin: auto;
+    }
+    .navbar{
+    width: 800px;
+    }
+    body,
+    #add1{
+        font-size: 35px;
+    }
+    .navbar-brand{
+        font-size: 40px;
+    }
+    
 }
